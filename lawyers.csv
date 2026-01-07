@@ -1,0 +1,26 @@
+ID,Lawyer_Name,Specialization,Email,YOE,Cases_Solved,Salary
+101,John Smith,Criminal Law,johnsmith@justicelawfirm.com,3,10,20000
+106,Shawn Craig,Criminal Law,shawncraig@justicelawfirm.com,4,19,25000
+107,Prince Solomon,Criminal Law,princesolomon@justicelawfirm.com,6,20,30000
+108,Jason Hamming,Criminal Law,jasonhamming@justicelawfirm.com,2,3,15000
+109,Julie Harper,Criminal Law,julieharper@justicelawfirm.com,8,28,35000
+110,John Simon,Family Law,johnsimon@justicelawfirm.com,10,20,45000
+102,Emily Johnson,Family Law,emilyjohnson@justicelawfirm.com,8,10,25000
+121,Freeda Heil,Family Law,freedaheil@justicelawfirm.com,8,9,25000
+134,Amy Mathew,Family Law,amymathew@justicelawfirm.com,8,16,25000
+120,Octavian,Family Law,octavian@justicelawfirm.com,8,19,25000
+138,Percy Jackson,Corporate Law,percyjackson@justicelawfirm.com,12,15,45000
+138,Percy Jackson,Corporate Law,percyjackson@justicelawfirm.com,12,7,45000
+100,Magnus Chase,Corporate Law,magnuschase@justicelawfirm.com,12,5,45000
+184,Annabeth Chase,Corporate Law,annabethchase@justicelawfirm.com,12,2,45000
+214,Samaira Abbas ,Corporate Law ,samairaabbas@justicelawfirm.com ,12 ,20 ,45000
+139 ,Sarah Davis ,Real Estate Law ,sarahdavis@justicelawfirm.com ,7 ,2 ,35000
+104,Amir Fadlan,Real Estate Law,amirfadlan@justicelawfirm.com,7,22,35000
+158,Blitz,Real Estate Law,blitz@justicelawfirm.com,7,28,20000
+149,Ares,Real Estate Law,ares@justicelawfirm.com,7,23,20000
+182,Zeus,Real Estate Law,zeus@justicelawfirm.com,7,25,20000
+105,David Wilson,Intellectual Property Law,davidwilson@justicelawfirm.com,9,35,35000
+162,Nancy Bobofit,Intellectual Property Law,nancybobofit@justicelawfirm.com,5,35,35000
+164,Ben Tennison,Intellectual Property Law,bentennison@justicelawfirm.com,6,35,35000
+188,Kevin Levin,Intellectual Property Law,kevinlevin@justicelawfirm.com,7,35,35000
+144,Gwen Tennison,Intellectual Property Law,gwentennison@justicelawfirm.com,9,35,35000
