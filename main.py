@@ -867,17 +867,26 @@ def view_lawyers(username):
     title = tk.Label(root, text="Lawyers", font=("Arial", 20))
     title.pack(pady=10)
     
-    text = tk.Text(root, wrap=tk.WORD)
-    text.pack(expand=True, fill=tk.BOTH, padx=20, pady=10)
+    frame = tk.Frame(root)
+    frame.pack(expand=True, fill=tk.BOTH, padx=20, pady=10)
+    
+    scrollbar = tk.Scrollbar(frame)
+    scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+    
+    text = tk.Text(frame, wrap=tk.WORD, font=("Courier", 10), yscrollcommand=scrollbar.set)
+    text.pack(expand=True, fill=tk.BOTH)
+    
+    scrollbar.config(command=text.yview)
     
     try:
         with open('lawyers.csv', 'r') as f:
             r = csv.reader(f)
-            headers = next(r, None)
-            if headers:
-                text.insert(tk.END, '\t'.join(headers) + '\n\n')
-            for row in r:
-                text.insert(tk.END, '\t'.join(row) + '\n')
+            data = list(r)
+            if data:
+                table = tabulate.tabulate(data, headers="firstrow", tablefmt="grid")
+                text.insert(tk.END, table)
+            else:
+                text.insert(tk.END, "No lawyers data available.")
     except FileNotFoundError:
         text.insert(tk.END, "Lawyers data not available.")
     
@@ -914,6 +923,37 @@ def create_new_request(username):
     title = tk.Label(root, text="Create New Request", font=("Arial", 20))
     title.pack(pady=10)
     
+    # Display lawyers table
+    lawyers_label = tk.Label(root, text="Available Lawyers:", font=("Arial", 14))
+    lawyers_label.pack(pady=5)
+    
+    lawyers_frame = tk.Frame(root)
+    lawyers_frame.pack(expand=False, fill=tk.X, padx=20, pady=5)
+    
+    lawyers_scrollbar = tk.Scrollbar(lawyers_frame)
+    lawyers_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+    
+    lawyers_text = tk.Text(lawyers_frame, wrap=tk.WORD, font=("Courier", 10), height=10, yscrollcommand=lawyers_scrollbar.set)
+    lawyers_text.pack(expand=True, fill=tk.X)
+    
+    lawyers_scrollbar.config(command=lawyers_text.yview)
+    
+    try:
+        with open('lawyers.csv', 'r') as f:
+            r = csv.reader(f)
+            data = list(r)
+            if data:
+                table = tabulate.tabulate(data, headers="firstrow", tablefmt="grid")
+                lawyers_text.insert(tk.END, table)
+                
+            else:
+                lawyers_text.insert(tk.END, "No lawyers available.")
+    except FileNotFoundError:
+        lawyers_text.insert(tk.END, "Lawyers data not available.")
+    
+    lawyers_text.config(state=tk.DISABLED)  # Make it read-only
+    
+    # Form
     tk.Label(root, text="Request ID:").pack(pady=5)
     req_id_entry = tk.Entry(root)
     req_id_entry.pack(pady=5)
