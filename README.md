@@ -208,7 +208,7 @@ Displayed using **Matplotlib bar chart**.
 
 ## 👨‍💻 Author
 
-Developed as an **academic project** using Python and MySQL.
+Developed as an **academic project** using Python and MySQL by Mariam Fatima, Shresti Subahar and Grehna Geo Marian.
 Feel free to fork, improve, and contribute.
 
 ---
@@ -216,15 +216,4 @@ Feel free to fork, improve, and contribute.
 ## 📜 License
 
 This project is for **educational purposes**.
-Free to use and modify.
-
 ---
-
-If you want, I can also:
-
-* Generate **`requirements.txt`**
-* Write a **project report**
-* Create **ER diagram**
-* Clean and refactor code for GitHub quality
-
-Just tell me 👍
