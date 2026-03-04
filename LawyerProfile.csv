@@ -1,0 +1,4 @@
+lawyer_id,name,specialization,hourly_rate,cases_handled,cv_link,experience
+L101,Ayesha Khan,Immigration,175,112,https://example.com/cv/ayesha,8
+L102,Rohan Das,Criminal,220,140,https://example.com/cv/rohan,11
+L103,Faria Noor,Family,160,93,https://example.com/cv/faria,7
