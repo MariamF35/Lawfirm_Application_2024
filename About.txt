@@ -1,0 +1,4 @@
+Law Firm Management System
+
+This platform manages lawyers, clients, cases, requests, interns, and payments.
+Use Admin access to maintain records and review case statistics.
